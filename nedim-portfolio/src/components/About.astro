@@ -1,0 +1,48 @@
+---
+---
+<section id="about" style="padding:6rem 0;">
+  <div class="container reveal">
+    <p class="section-label" style="margin-bottom:2rem;">
+      <span class="num">01.</span> About Me <span class="line"></span>
+    </p>
+
+    <div style="display:grid;grid-template-columns:1fr 200px;gap:3rem;align-items:start;">
+      <div>
+        <p style="color:#8B95A7;line-height:1.9;margin-bottom:1.1rem;">
+          I'm a Full Stack Developer based in Bosnia and Herzegovina, specializing in building production-grade web applications — marketplace platforms, real-time systems, and cloud-based solutions.
+        </p>
+        <p style="color:#8B95A7;line-height:1.9;margin-bottom:1.1rem;">
+          My main focus right now is building accessible, scalable applications at <span style="color:#64FFDA;">P23</span>, where I work across the full stack — React, Next.js, and TypeScript on the frontend, Node.js, PostgreSQL, and Firebase on the backend.
+        </p>
+        <p style="color:#8B95A7;line-height:1.9;margin-bottom:1.1rem;">
+          I completed an advanced mentorship under a senior engineer focused on application architecture and engineering best practices — a foundation that shapes how I approach every project I build.
+        </p>
+        <p style="color:#8B95A7;line-height:1.9;margin-bottom:1.5rem;">
+          I'm also AI-native in how I work — using tools like Claude Code to move faster on production codebases, and integrating AI APIs directly into the products I ship.
+        </p>
+        <p style="color:#8B95A7;line-height:1.9;margin-bottom:0.75rem;font-size:0.9rem;">Technologies I work with most:</p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.4rem 1.5rem;">
+          {["React / Next.js", "TypeScript", "Node.js", "PostgreSQL", "Prisma ORM", "Firebase"].map(t => (
+            <div style="display:flex;align-items:center;gap:0.5rem;font-size:0.85rem;color:#8B95A7;" class="mono">
+              <span style="color:#64FFDA;">▹</span>{t}
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div style="position:relative;justify-self:center;">
+        <div style="width:180px;height:180px;border-radius:8px;background:linear-gradient(135deg,#111620,#1A2030);border:1px solid #233554;display:flex;align-items:center;justify-content:center;position:relative;">
+          <span class="display" style="font-size:3rem;color:#64FFDA;opacity:0.9;">NK</span>
+        </div>
+        <div style="position:absolute;top:12px;left:12px;width:180px;height:180px;border:2px solid #64FFDA;border-radius:8px;z-index:-1;"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  @media (max-width: 640px) {
+    #about .reveal > div { grid-template-columns: 1fr !important; }
+    #about .reveal > div > div:last-child { display: none; }
+  }
+</style>

@@ -1,0 +1,36 @@
+---
+const categories = [
+  { label: "Frontend", skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "React Query"] },
+  { label: "Backend", skills: ["Node.js", "Prisma ORM", "PostgreSQL", "Firebase", "REST APIs"] },
+  { label: "Architecture & Cloud", skills: ["Repository Pattern", "Event-Driven Systems", "Ably Realtime", "AWS S3", "Auth0"] },
+  { label: "AI Tools", skills: ["Claude Code", "AI Coding Agents", "AI API Integration", "Prompt Engineering"] },
+];
+---
+<section id="skills" style="padding:6rem 0;">
+  <div class="container reveal">
+    <p class="section-label" style="margin-bottom:2rem;">
+      <span class="num">03.</span> Skills <span class="line"></span>
+    </p>
+
+    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;">
+      {categories.map(cat => (
+        <div class="card">
+          <p class="mono" style="color:#64FFDA;font-size:0.8rem;font-weight:600;margin-bottom:1rem;">{cat.label}</p>
+          <div style="display:flex;flex-direction:column;gap:0.5rem;">
+            {cat.skills.map(s => (
+              <div style="display:flex;align-items:center;gap:0.5rem;font-size:0.825rem;color:#8B95A7;">
+                <span style="color:#64FFDA;font-size:0.7rem;">▹</span>{s}
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  @media (max-width: 700px) {
+    #skills .container > div { grid-template-columns: 1fr !important; }
+  }
+</style>
